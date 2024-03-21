@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "./Logo";
 import NavLinks from "./NavLinks";
+import MoreDropdown from "./MoreDropdown";
 
 export default function SideNav() {
   return (
@@ -11,7 +12,7 @@ export default function SideNav() {
         {/* {user && <ProfileLink user={user} />} */}
 
         <div className="hidden md:flex relative md:mt-auto flex-1 items-end w-full">
-          {/* <MoreDropdown /> */}
+          <MoreDropdown />
         </div>
       </div>
     </div>
