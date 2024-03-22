@@ -3,7 +3,7 @@ import NextAuth from "next-auth";
 import google from "next-auth/providers/google";
 import prisma from "./src/lib/prisma";
 
-export const { handlers, auth } = NextAuth({
+export const { handlers, auth, signIn, signOut } = NextAuth({
   adapter: PrismaAdapter(prisma),
   callbacks: {
     async session({ session, token }) {
